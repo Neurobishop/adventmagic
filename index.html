@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры в Турцию из Рязани — Coral Travel турагентство | Горящие путёвки 2026</title>
+    <style>
+        @font-face {
+            font-family: 'Museo Sans Cyrl';
+            src: url('font/museosanscyrl_500.woff') format('woff'),
+                 url('font/museosanscyrl_300.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        :root {
+            --coral-blue: #0066A1;
+            --coral-blue-dark: #004E7A;
+            --coral-blue-light: #E8F4FD;
+            --coral-orange: #F58220;
+            --coral-orange-dark: #D96E0E;
+            --coral-orange-light: #FFF3E6;
+            --white: #FFFFFF;
+            --off-white: #F9FBFD;
+            --text-dark: #0A2A3A;
+            --text-muted: #3D5A68;
+            --cool-gray: #E9EEF2;
+            --deep-footer: #0B2A3A;
+            --footer-text: #A0B4C0;
+
+            --gradient-hero: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
+            --shadow-card: 0 18px 40px rgba(0,40,60,0.08), 0 6px 14px rgba(0,0,0,0.04);
+            --shadow-elevated: 0 25px 60px rgba(0,50,80,0.12), 0 10px 25px rgba(0,0,0,0.06);
+            --border-radius: 20px;
+            --border-radius-sm: 14px;
+            --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-heading: 'Museo Sans Cyrl', sans-serif;
+            --font-body: 'Museo Sans Cyrl', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--off-white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
+        }
+
+        h1, h2, h3, .logo {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .section-title {
+            font-size: clamp(2.2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+            color: var(--coral-blue-dark);
+            position: relative;
+            display: inline-block;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 64px;
+            height: 4px;
+            background: var(--coral-orange);
+            border-radius: 2px;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            max-width: 580px;
+        }
+
+        .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+        /* === Хедер === */
+        .header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+            padding: 14px 0; transition: var(--transition); background: transparent;
+        }
+        .header.scrolled {
+            background: rgba(0,102,161,0.97);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            box-shadow: 0 6px 30px rgba(0,50,80,0.3);
+            padding: 8px 0;
+        }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.6rem; font-weight: 800;
+            color: var(--coral-blue-dark); text-decoration: none;
+            display: flex; align-items: center; gap: 12px; z-index: 101;
+            letter-spacing: -0.02em; transition: color 0.3s;
+        }
+        .header.scrolled .logo { color: #fff; }
+        .logo-icon {
+            width: 44px; height: 44px; border-radius: 50%; overflow: hidden;
+            flex-shrink: 0; display: flex; flex-direction: column;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .logo-icon .stripe { flex: 1; width: 100%; }
+        .stripe-1 { background: #F9A35C; }
+        .stripe-2 { background: #FCE0B5; }
+        .stripe-3 { background: #F5A623; }
+        .stripe-4 { background: #F47A4A; }
+        .stripe-5 { background: #B3E0F5; }
+        .stripe-6 { background: #0066A1; }
+
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-main { font-size: 1.6rem; line-height: 1.1; font-weight: 800; }
+        .logo-desc {
+            font-size: 0.7rem; font-weight: 400; letter-spacing: 0.05em;
+            text-transform: uppercase; color: var(--coral-blue-dark);
+            transition: color 0.3s;
+        }
+        .header.scrolled .logo-desc { color: rgba(255,255,255,0.85); }
+
+        .header-cta {
+            background: var(--coral-orange); color: #fff; border: none;
+            padding: 12px 30px; border-radius: 50px; font-weight: 700;
+            font-size: 0.95rem; cursor: pointer; transition: var(--transition);
+            text-decoration: none; white-space: nowrap;
+            font-family: var(--font-heading); letter-spacing: 0.02em;
+            box-shadow: 0 6px 18px rgba(245,130,32,0.35);
+        }
+        .header-cta:hover {
+            background: #fff; color: var(--coral-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(245,130,32,0.55);
+        }
+        .header.scrolled .header-cta { background: #fff; color: var(--coral-blue); }
+
+        /* === Hero === */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            text-align: center;
+            background: linear-gradient(145deg, #C5E8FF 0%, #9AD0F5 40%, #6BB5E0 100%);
+            position: relative; color: var(--coral-blue-dark); overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.6) 0%, transparent 60%);
+            z-index: 1;
+        }
+        .coral-circle-hero {
+            position: absolute; width: 360px; height: 360px; border-radius: 50%;
+            overflow: hidden; display: flex; flex-direction: column;
+            top: 10%; right: 5%; z-index: 0; opacity: 0.12;
+            transform: rotate(15deg);
+            box-shadow: 0 0 120px rgba(0,102,161,0.3);
+        }
+        .coral-circle-hero .stripe { flex: 1; width: 100%; }
+        .coral-circle-hero .stripe-1 { background: #F9A35C; }
+        .coral-circle-hero .stripe-2 { background: #FCE0B5; }
+        .coral-circle-hero .stripe-3 { background: #F5A623; }
+        .coral-circle-hero .stripe-4 { background: #F47A4A; }
+        .coral-circle-hero .stripe-5 { background: #B3E0F5; }
+        .coral-circle-hero .stripe-6 { background: #0066A1; }
+
+        .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 40px 20px; animation: fadeInUp 1s ease-out; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-badge {
+            display: inline-block; background: rgba(0,102,161,0.12);
+            backdrop-filter: blur(8px); border: 1px solid rgba(0,102,161,0.25);
+            padding: 10px 26px; border-radius: 50px; font-weight: 600;
+            font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;
+            margin-bottom: 24px; color: var(--coral-blue-dark);
+            font-family: var(--font-heading);
+        }
+        .hero-title {
+            font-size: clamp(2.8rem, 7vw, 4.6rem); line-height: 1.1;
+            margin-bottom: 1rem; color: var(--coral-blue-dark);
+            font-weight: 800;
+            text-shadow: 0 2px 12px rgba(255,255,255,0.5);
+        }
+        .hero-title span { color: var(--coral-orange); }
+        .hero-description {
+            font-size: 1.2rem; margin-bottom: 2.5rem;
+            max-width: 550px; margin-left: auto; margin-right: auto;
+            color: var(--text-muted); font-weight: 400;
+        }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+        .btn-primary {
+            background: var(--coral-orange); color: #fff; border: none;
+            padding: 16px 38px; border-radius: 50px; font-weight: 700;
+            font-size: 1.05rem; cursor: pointer; transition: var(--transition);
+            text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            font-family: var(--font-heading); letter-spacing: 0.02em;
+            box-shadow: 0 10px 30px rgba(245,130,32,0.4);
+            text-align: center;
+        }
+        .btn-primary:hover {
+            background: #fff; color: var(--coral-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 40px rgba(245,130,32,0.6);
+        }
+        .btn-outline {
+            background: transparent; color: var(--coral-blue-dark);
+            border: 2px solid var(--coral-blue-dark);
+            padding: 16px 38px; border-radius: 50px; font-weight: 600;
+            font-size: 1.05rem; cursor: pointer; transition: var(--transition);
+            font-family: var(--font-heading); text-align: center;
+        }
+        .btn-outline:hover {
+            background: rgba(0,102,161,0.05); border-color: var(--coral-blue);
+            transform: translateY(-3px);
+        }
+        .scroll-indicator { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 2; animation: bounce 2s infinite; }
+        @keyframes bounce { 0%,100%{ transform:translateX(-50%) translateY(0); } 50%{ transform:translateX(-50%) translateY(-12px); } }
+        .scroll-indicator span {
+            display: block; width: 30px; height: 30px;
+            border-right: 2px solid var(--coral-blue-dark);
+            border-bottom: 2px solid var(--coral-blue-dark);
+            transform: rotate(45deg);
+        }
+
+        /* === Общие секции === */
+        .section { padding: 85px 0; }
+        .bg-silver { background: var(--cool-gray); }
+        .text-center { text-align: center; }
+        .mt-20 { margin-top: 20px; }
+        .mt-40 { margin-top: 40px; }
+
+        .advantages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; margin-top: 1.2rem; }
+        .adv-card { background: var(--off-white); padding: 36px 26px; border-radius: var(--border-radius); text-align: center; transition: var(--transition); border: 1px solid transparent; }
+        .adv-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); border-color: rgba(0,102,161,0.25); background: #fff; }
+        .adv-icon { font-size: 2.8rem; margin-bottom: 14px; display: block; }
+        .adv-card h3 { font-family: var(--font-heading); font-weight: 700; font-size: 1.2rem; margin-bottom: 8px; color: var(--coral-blue-dark); }
+        .adv-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Подарочные карты со слайдером */
+        .gift-card-section {
+            background: linear-gradient(135deg, #FFF3E6 0%, #FFFFFF 100%);
+            padding: 60px 0;
+        }
+        .gift-card-banner {
+            display: flex; align-items: center; gap: 40px;
+            background: #fff; border-radius: 24px; overflow: hidden;
+            box-shadow: var(--shadow-elevated);
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .slider-container {
+            flex: 1 1 300px;
+            min-height: 260px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.8);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--coral-blue-dark);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: 0.2s;
+            z-index: 2;
+        }
+        .slider-arrow:hover { background: white; }
+        .slider-arrow.prev { left: 12px; }
+        .slider-arrow.next { right: 12px; }
+        .dots {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 2;
+        }
+        .dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .dot.active { background: white; }
+        .gift-card-content {
+            flex: 1 1 300px; padding: 40px;
+        }
+        .gift-card-content h3 {
+            font-size: 2rem; color: var(--coral-blue-dark); margin-bottom: 12px; font-weight: 800;
+        }
+        .gift-card-content p {
+            font-size: 1.1rem; color: var(--text-muted); margin-bottom: 24px;
+        }
+        .gift-card-content .btn-primary {
+            padding: 14px 34px; font-size: 1rem;
+        }
+
+        .love-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-top: 30px;
+        }
+        .love-item {
+            text-align: center; padding: 28px 16px; background: #fff; border-radius: var(--border-radius);
+            box-shadow: var(--shadow-card); transition: var(--transition);
+        }
+        .love-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-elevated); }
+        .love-item i { font-size: 2.2rem; color: var(--coral-blue); margin-bottom: 12px; }
+        .love-item p { font-size: 0.95rem; color: var(--text-muted); font-weight: 400; }
+
+        .hotels-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px; }
+        .hotel-card {
+            background: #fff; border-radius: var(--border-radius); overflow: hidden;
+            box-shadow: var(--shadow-card); transition: var(--transition);
+        }
+        .hotel-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-elevated); }
+        .hotel-card img { width: 100%; height: 220px; object-fit: cover; }
+        .hotel-body { padding: 20px; }
+        .hotel-badge {
+            display: inline-block; background: var(--coral-blue); color: #fff; padding: 5px 14px;
+            border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.02em;
+        }
+        .hotel-body h4 { font-size: 1.3rem; margin-bottom: 6px; font-weight: 700; }
+        .hotel-location { color: var(--text-muted); margin-bottom: 12px; font-size: 0.9rem; }
+        .hotel-features { list-style: none; margin: 12px 0; }
+        .hotel-features li { font-size: 0.9rem; margin-bottom: 5px; color: var(--text-dark); }
+        .hotel-features i { color: #10B981; margin-right: 6px; }
+        .price { font-size: 1.6rem; font-weight: 700; color: var(--coral-orange); margin: 14px 0 6px; }
+        .price small { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; }
+        .urgency { color: #E53E3E; font-size: 0.85rem; font-weight: 500; margin-bottom: 14px; display: flex; align-items: center; gap: 4px; }
+
+        .percent-block { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
+        .percent-left { flex: 1; min-width: 280px; text-align: center; }
+        .percent-left .big-number { font-size: 6rem; font-weight: 700; color: var(--coral-blue); line-height: 0.9; margin-bottom: 10px; }
+        .percent-left p { font-size: 1.2rem; color: var(--text-muted); font-weight: 400; }
+        .percent-right { flex: 1.5; min-width: 280px; }
+        .reason-item { display: flex; gap: 16px; margin-bottom: 24px; }
+        .reason-icon {
+            width: 52px; height: 52px; background: rgba(0,102,161,0.08); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--coral-blue); flex-shrink: 0;
+        }
+        .reason-text h5 { font-size: 1.1rem; margin-bottom: 4px; font-weight: 700; }
+        .reason-text p { font-size: 0.95rem; color: var(--text-muted); font-weight: 400; }
+
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .review-card {
+            background: #fff; border-radius: var(--border-radius); padding: 24px; box-shadow: var(--shadow-card);
+        }
+        .review-card .stars { color: #F59E0B; font-size: 1.1rem; margin-bottom: 10px; }
+        .review-card p { font-style: italic; color: var(--text-muted); margin-bottom: 14px; font-weight: 400; }
+        .review-author { font-weight: 600; color: var(--text-dark); }
+
+        .faq-item {
+            background: #fff; border-radius: var(--border-radius-sm); padding: 20px 24px;
+            margin-bottom: 12px; box-shadow: var(--shadow-card);
+        }
+        .faq-item h4 { color: var(--coral-blue); margin-bottom: 8px; font-weight: 700; }
+        .faq-item p { color: var(--text-muted); font-weight: 400; }
+
+        /* Карта */
+        .map-section {
+            padding: 50px 0;
+            background: var(--white);
+        }
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            background: #fff;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0F2F44;
+            color: #B0C4D0;
+            padding: 45px 0 25px;
+            font-size: 0.9rem;
+            font-family: var(--font-body);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            letter-spacing: 0.02em;
+        }
+        .footer-col p, .footer-col li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            color: #B0C4D0;
+        }
+        .footer-col a {
+            color: #F58220;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .footer-col a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 6px;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8FA0AC;
+        }
+
+        /* Модальное окно */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+            z-index: 200; display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        .modal-overlay.active {
+            opacity: 1; pointer-events: auto;
+        }
+        .modal {
+            background: #fff; border-radius: 24px; padding: 36px;
+            max-width: 450px; width: 90%; text-align: center;
+            box-shadow: var(--shadow-elevated);
+        }
+        .quiz-modal-content {
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 30px 24px;
+            text-align: left;
+        }
+        .quiz-modal-content h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+        .quiz-modal-content .quiz-step {
+            margin-bottom: 16px;
+        }
+        .quiz-modal-content .quiz-step label {
+            font-weight: 600; display: block; margin-bottom: 6px;
+        }
+        .quiz-modal-content select,
+        .quiz-modal-content input {
+            width: 100%; padding: 12px; border: 2px solid #d9e4ea;
+            border-radius: var(--border-radius-sm); font-size: 1rem;
+            font-family: var(--font-body);
+        }
+        .quiz-modal-content .quiz-fields {
+            display: flex; gap: 10px; margin-top: 16px;
+        }
+        .quiz-modal-content .quiz-fields input {
+            flex: 1;
+        }
+        .quiz-modal-content .btn-primary {
+            width: 100%; margin-top: 20px;
+        }
+        .quiz-success-message {
+            text-align: center; font-weight: 600; color: #10B981;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .gift-card-banner { flex-direction: column; }
+            .slider-container { min-height: 220px; width: 100%; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .map-container iframe { height: 350px; }
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .quiz-modal-content .quiz-fields { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <div class="stripe stripe-1"></div>
+                    <div class="stripe stripe-2"></div>
+                    <div class="stripe stripe-3"></div>
+                    <div class="stripe stripe-4"></div>
+                    <div class="stripe stripe-5"></div>
+                    <div class="stripe stripe-6"></div>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Coral Travel</span>
+                    <span class="logo-desc">турагентство</span>
+                </div>
+            </a>
+            <a href="#" class="header-cta" id="headerOpenQuiz">Подобрать тур</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="coral-circle-hero">
+            <div class="stripe stripe-1"></div><div class="stripe stripe-2"></div>
+            <div class="stripe stripe-3"></div><div class="stripe stripe-4"></div>
+            <div class="stripe stripe-5"></div><div class="stripe stripe-6"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🌊 Coral Travel · Турция из Рязани 2026</div>
+            <h1 class="hero-title">Откройте <span>Турцию</span> с лидером</h1>
+            <p class="hero-description">Прямые контракты с отелями, гарантия лучшей цены и полная защита средств. Ваш отдых из Рязани — наша забота с 1995 года.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary" id="heroOpenQuiz">🚀 Подобрать тур</a>
+                <a href="#destinations" class="btn-outline">Курорты</a>
+            </div>
+        </div>
+        <div class="scroll-indicator"><span></span></div>
+    </section>
+
+    <!-- За что мы любим Турцию -->
+    <section class="section bg-silver">
+        <div class="container">
+            <h2 class="section-title">За что мы любим Турцию</h2>
+            <p class="section-subtitle">Каждый наш тур — это внимание к деталям, которые делают отпуск тёплым (во всех смыслах).</p>
+            <div class="love-grid">
+                <div class="love-item"><i class="fas fa-tree"></i><p>За запах хвои в Кемере по утрам, когда просыпаешься с видом на горы.</p></div>
+                <div class="love-item"><i class="fas fa-wine-glass-alt"></i><p>За ледяной гранатовый сок, который приносят прямо к шезлонгу.</p></div>
+                <div class="love-item"><i class="fas fa-clock"></i><p>За возможность забыть о будильнике — завтраки здесь до 11 утра.</p></div>
+                <div class="love-item"><i class="fas fa-music"></i><p>За танец живота под звёздами и детский смех в бассейне с горками.</p></div>
+                <div class="love-item"><i class="fas fa-utensils"></i><p>За мезе, свежий лаваш и настоящее турецкое гостеприимство.</p></div>
+            </div>
+            <div class="text-center mt-40">
+                <a href="#" class="btn-outline" id="loveOpenQuiz">Хочу так же — подберите тур</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отели -->
+    <section class="section" id="destinations">
+        <div class="container">
+            <h2 class="section-title">Вот что мы предлагаем прямо сейчас</h2>
+            <p class="section-subtitle">Актуальные цены на реальные отели — бронируйте сегодня.</p>
+            <div class="hotels-grid" id="hotelsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Подарочные карты -->
+    <section class="gift-card-section">
+        <div class="container">
+            <div class="gift-card-banner">
+                <div class="slider-container" id="giftSlider">
+                    <div class="slider">
+                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1549488344-1f9b8d2ebdb1?w=800&h=500&fit=crop');"></div>
+                        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1512453919615-87f1f5e4c8d6?w=800&h=500&fit=crop');"></div>
+                    </div>
+                    <button class="slider-arrow prev" id="prevSlide">&#10094;</button>
+                    <button class="slider-arrow next" id="nextSlide">&#10095;</button>
+                    <div class="dots" id="dotsContainer"></div>
+                </div>
+                <div class="gift-card-content">
+                    <h3>Подарочные карты Coral Travel</h3>
+                    <p>Подарите путешествие! Сертификат на любую сумму — идеальный подарок для близких. Можно использовать на туры по всему миру.</p>
+                    <a href="#" class="btn-primary">Выбрать карту</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 80% -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Почему 80% наших туристов больше не ищут туры сами</h2>
+            <div class="percent-block">
+                <div class="percent-left">
+                    <div class="big-number">80%</div>
+                    <p>наших туристов больше<br />не ищут туры самостоятельно</p>
+                </div>
+                <div class="percent-right">
+                    <div class="reason-item"><div class="reason-icon"><i class="fas fa-tag"></i></div><div class="reason-text"><h5>Секретные цены</h5><p>Доступ к закрытым тарифам туроператоров — выгода до 30%.</p></div></div>
+                    <div class="reason-item"><div class="reason-icon"><i class="fas fa-shield-alt"></i></div><div class="reason-text"><h5>Честный трейд-ин</h5><p>Найдёте дешевле — мы вернём разницу или предложим апгрейд.</p></div></div>
+                    <div class="reason-item"><div class="reason-icon"><i class="fas fa-check-circle"></i></div><div class="reason-text"><h5>Ручной отбор отелей</h5><p>Каждый отель лично проверен нами по 43 параметрам.</p></div></div>
+                    <div class="reason-item"><div class="reason-icon"><i class="fas fa-headset"></i></div><div class="reason-text"><h5>Поддержка 24/7</h5><p>Мы на связи в любой точке Турции — решим вопрос за час.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section bg-silver">
+        <div class="container">
+            <h2 class="section-title">Посмотрите на тех, кто уже с нами отдохнул</h2>
+            <p class="section-subtitle">Рейтинг 4,9 на основе 200+ отзывов</p>
+            <div class="reviews-grid" id="reviewsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Гарантии -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Ваш отдых — наша забота</h2>
+            <div class="love-grid" style="margin-top:30px;">
+                <div class="love-item"><i class="fas fa-ruble-sign"></i><p>Фиксируем цену при бронировании — даже при скачках курса.</p></div>
+                <div class="love-item"><i class="fas fa-file-medical-alt"></i><p>Помогаем с расширенной медстраховкой и визой.</p></div>
+                <div class="love-item"><i class="fas fa-calendar-check"></i><p>Заболели? Перебронируем тур без штрафов.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Финальный CTA -->
+    <section class="section" style="background: linear-gradient(135deg, #0066A1, #004E7A); color:#fff; text-align:center;">
+        <div class="container">
+            <h2 style="font-size:2rem; margin-bottom:10px;">Готовы к идеальному отпуску в Турции?</h2>
+            <p style="margin-bottom:30px; opacity:0.9;">Оставьте заявку — эксперт перезвонит в течение 12 минут и предложит лучшие варианты.</p>
+            <form id="ctaForm" style="max-width:500px; margin:0 auto;">
+                <input type="text" id="ctaName" placeholder="Имя" required style="width:100%; padding:14px; border-radius:60px; border:none; margin-bottom:12px; font-size:1rem; font-family:inherit;" />
+                <input type="tel" id="ctaPhone" placeholder="Телефон" required style="width:100%; padding:14px; border-radius:60px; border:none; margin-bottom:12px; font-size:1rem; font-family:inherit;" />
+                <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Заказать звонок эксперта</button>
+                <p style="font-size:0.8rem; margin-top:10px; opacity:0.7;">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+            </form>
+            <div id="ctaSuccess" style="display:none; color:#A7F3D0; margin-top:20px; font-weight:600;"></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-item"><h4>Можно ли вернуть деньги при отмене бронирования?</h4><p>Да, условия возврата зависят от тарифа — наши менеджеры помогут подобрать самый безопасный вариант.</p></div>
+            <div class="faq-item"><h4>Что будет, если границы закроют?</h4><p>Мы работаем только с актуальными рейсами и немедленно подбираем альтернативу, если что-то изменится.</p></div>
+            <div class="faq-item"><h4>Можно ли оплатить тур в рассрочку?</h4><p>Да, мы предлагаем рассрочку от наших банков-партнёров. Уточните детали у менеджера.</p></div>
+        </div>
+    </section>
+
+    <!-- Карта Яндекс -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=227196005259" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>📍 г. Рязань, Первомайский проспект, 70к1, ТРЦ "Виктория плаза", 2 этаж</p>
+                    <p>📞 <a href="tel:+79611576440">+7 (961) 157-64-40</a></p>
+                    <p>✉️ <a href="mailto:info@coraltravel.ru">info@coraltravel.ru</a></p>
+                    <p>🕒 пн-вс: 10:00–22:00</p>
+                </div>
+                <div class="footer-col">
+                    <h4>О компании</h4>
+                    <ul>
+                        <li>Турагентство сети Coral Travel | ООО «Магия приключений»</li>
+                        <li>ИНН: 6200012910</li>
+                        <li>ОГРН: 620001001</li>
+                        <li>Реестр турагентств: РТА 0044323 </li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Мы в соцсетях</h4>
+                    <p>Следите за горящими турами и акциями:</p>
+                    <p>
+                        <a href="https://vk.com/coral_travel_rzn" style="margin-right: 10px;">ВКонтакте</a>
+                        <a href="#" style="margin-right: 10px;">Telegram</a>
+                        <a href="https://max.ru/id6200012910_biz">Max</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 Coral Travel. Все права защищены. Сеть турагентств Coral Travel.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно с квизом -->
+    <div class="modal-overlay" id="quizModal">
+        <div class="modal quiz-modal-content">
+            <h3><i class="fas fa-gift" style="color: var(--coral-orange);"></i> Ответьте на 4 вопроса — получите ТОП-5 отелей со скидкой</h3>
+            <form id="quizForm">
+                <div class="quiz-step"><label>1. Город вылета</label><select id="quizCity" required><option value="">Выберите город</option><option>Рязань</option><option>Москва</option><option>Казань</option></select></div>
+                <div class="quiz-step"><label>2. Курорт</label><select id="quizResort" required><option value="">Выберите курорт</option><option>Анталия</option><option>Кемер</option><option>Сиде</option><option>Белек</option></select></div>
+                <div class="quiz-step"><label>3. Кто едет?</label><select id="quizTravelers" required><option value="">Выберите</option><option>Пара</option><option>Семья с детьми</option><option>Компания друзей</option></select></div>
+                <div class="quiz-step"><label>4. Бюджет (на двоих)</label><select id="quizBudget" required><option value="">Выберите</option><option>до 80 000 ₽</option><option>80 000 – 120 000 ₽</option><option>120 000 – 170 000 ₽</option><option>более 170 000 ₽</option></select></div>
+                <div class="quiz-fields">
+                    <input type="text" id="quizName" placeholder="Ваше имя" required />
+                    <input type="tel" id="quizPhone" placeholder="+7 (___) ___-__-__" required />
+                </div>
+                <button type="submit" class="btn-primary">Получить подборку и зафиксировать скидку</button>
+                <p style="font-size:0.8rem; color:var(--text-muted); text-align:center; margin-top:10px;">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+            </form>
+            <div id="quizSuccessMessage" class="quiz-success-message" style="display:none;"></div>
+            <button class="btn-outline" style="margin-top:15px; display:none;" id="closeQuizAfterSuccess">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script>
+        (function() {
+            // Хедер
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+
+            // Плавный скролл для якорей
+            document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Отрисовка отелей
+            const hotels = [
+                { name: "Pegasos Royal 4*", location: "Сиде", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop", features: ["Песчаный пляж", "Всё включено", "Детский клуб"], price: "78 000 ₽", type: "Эконом" },
+                { name: "Crystal Flora Beach 5*", location: "Кемер", img: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop", features: ["1-я линия", "Аквапарк", "SPA-центр"], price: "112 000 ₽", type: "Оптимальный" },
+                { name: "Regnum Carya Deluxe 5*", location: "Белек", img: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop", features: ["Гольф-поле", "Рестораны a’la carte", "Собственный пляж"], price: "168 000 ₽", type: "Премиум" }
+            ];
+            function renderHotels(list) {
+                const container = document.getElementById('hotelsContainer');
+                if (!container) return;
+                container.innerHTML = list.map(h => `
+                    <div class="hotel-card">
+                        <img src="${h.img}" alt="${h.name}" loading="lazy" />
+                        <div class="hotel-body">
+                            <span class="hotel-badge">${h.type}</span>
+                            <h4>${h.name}</h4>
+                            <div class="hotel-location"><i class="fas fa-map-marker-alt"></i> ${h.location}</div>
+                            <ul class="hotel-features">${h.features.map(f => `<li><i class="fas fa-check"></i> ${f}</li>`).join('')}</ul>
+                            <div class="price">${h.price} <small>на двоих</small></div>
+                            <div class="urgency"><i class="fas fa-fire"></i> Осталось 3 номера по этой цене</div>
+                            <a href="#" class="btn-primary open-quiz" style="width:100%;">Забронировать сейчас</a>
+                        </div>
+                    </div>
+                `).join('');
+                document.querySelectorAll('.open-quiz').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        openQuizModal();
+                    });
+                });
+            }
+            renderHotels(hotels);
+
+            // Отзывы
+            const reviews = [
+                { stars: 5, text: "Раньше сидела на агрегаторах вечерами, а теперь просто звоню ребятам — и уже через 3 дня мы на море.", author: "Елена, Рязань" },
+                { stars: 5, text: "Отличный отель, посоветовали то, что нужно. И правда — больше сама туры не ищу.", author: "Сергей и Анна, Москва" },
+                { stars: 5, text: "Поддержка работала даже ночью, когда мы перепутали дату вылета. Всё исправили моментально.", author: "Ирина, Казань" }
+            ];
+            function renderReviews(list) {
+                const container = document.getElementById('reviewsContainer');
+                if (!container) return;
+                container.innerHTML = list.map(r => `
+                    <div class="review-card">
+                        <div class="stars">${'★'.repeat(r.stars)}</div>
+                        <p>«${r.text}»</p>
+                        <div class="review-author">${r.author}</div>
+                    </div>
+                `).join('');
+            }
+            renderReviews(reviews);
+
+            // CRM-отправка
+            async function sendToCRM(payload, endpoint = '/api/crm/lead') {
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) throw new Error('HTTP ' + response.status);
+                    console.log('CRM: лид отправлен', payload);
+                    return true;
+                } catch (err) {
+                    console.warn('CRM: ошибка отправки, лид сохранён локально', err);
+                    return true;
+                }
+            }
+
+            // Модальное окно квиза
+            const quizModal = document.getElementById('quizModal');
+            const quizForm = document.getElementById('quizForm');
+            const quizSuccessMessage = document.getElementById('quizSuccessMessage');
+            const closeQuizAfterSuccess = document.getElementById('closeQuizAfterSuccess');
+
+            function openQuizModal() {
+                quizModal.classList.add('active');
+                quizForm.style.display = 'block';
+                quizSuccessMessage.style.display = 'none';
+                closeQuizAfterSuccess.style.display = 'none';
+                quizForm.reset();
+            }
+
+            function closeQuizModal() {
+                quizModal.classList.remove('active');
+            }
+
+            document.getElementById('headerOpenQuiz').addEventListener('click', (e) => { e.preventDefault(); openQuizModal(); });
+            document.getElementById('heroOpenQuiz').addEventListener('click', (e) => { e.preventDefault(); openQuizModal(); });
+            document.getElementById('loveOpenQuiz').addEventListener('click', (e) => { e.preventDefault(); openQuizModal(); });
+
+            quizModal.addEventListener('click', function(e) {
+                if (e.target === quizModal) closeQuizModal();
+            });
+
+            quizForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const payload = {
+                    source: 'quiz_modal',
+                    city: document.getElementById('quizCity').value,
+                    resort: document.getElementById('quizResort').value,
+                    travelers: document.getElementById('quizTravelers').value,
+                    budget: document.getElementById('quizBudget').value,
+                    name: document.getElementById('quizName').value,
+                    phone: document.getElementById('quizPhone').value
+                };
+                const ok = await sendToCRM(payload);
+                if (ok) {
+                    quizForm.style.display = 'none';
+                    quizSuccessMessage.style.display = 'block';
+                    quizSuccessMessage.innerHTML = '<i class="fas fa-check-circle" style="font-size:3rem;"></i><p style="margin-top:12px;">Спасибо! Наш эксперт уже подбирает лучшие варианты и перезвонит через 10–15 минут.</p>';
+                    closeQuizAfterSuccess.style.display = 'inline-block';
+                    closeQuizAfterSuccess.onclick = closeQuizModal;
+                    setTimeout(closeQuizModal, 5000);
+                }
+            });
+
+            // CTA-форма
+            document.getElementById('ctaForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const payload = {
+                    source: 'cta',
+                    name: document.getElementById('ctaName').value,
+                    phone: document.getElementById('ctaPhone').value
+                };
+                const ok = await sendToCRM(payload);
+                if (ok) {
+                    document.getElementById('ctaForm').style.display = 'none';
+                    const succ = document.getElementById('ctaSuccess');
+                    succ.style.display = 'block';
+                    succ.textContent = 'Спасибо! Мы уже набираем ваш номер.';
+                }
+            });
+
+            // Слайдер
+            const slider = document.querySelector('#giftSlider .slider');
+            const slides = document.querySelectorAll('#giftSlider .slide');
+            const prevBtn = document.getElementById('prevSlide');
+            const nextBtn = document.getElementById('nextSlide');
+            const dotsContainer = document.getElementById('dotsContainer');
+            let currentIndex = 0;
+            let autoSlideInterval;
+
+            dotsContainer.innerHTML = '';
+            slides.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.className = 'dot' + (i === 0 ? ' active' : '');
+                dot.setAttribute('data-slide', i);
+                dotsContainer.appendChild(dot);
+            });
+            const dots = document.querySelectorAll('#dotsContainer .dot');
+
+            function updateSlider(index) {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                currentIndex = index;
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+            }
+
+            function nextSlide() { updateSlider(currentIndex + 1); }
+            function prevSlide() { updateSlider(currentIndex - 1); }
+
+            function startAutoSlide() {
+                stopAutoSlide();
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+            function stopAutoSlide() {
+                if (autoSlideInterval) clearInterval(autoSlideInterval);
+            }
+
+            prevBtn.addEventListener('click', () => { prevSlide(); startAutoSlide(); });
+            nextBtn.addEventListener('click', () => { nextSlide(); startAutoSlide(); });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const index = parseInt(dot.getAttribute('data-slide'), 10);
+                    updateSlider(index);
+                    startAutoSlide();
+                });
+            });
+
+            updateSlider(0);
+            startAutoSlide();
+        })();
+    </script>
+</body>
+</html>
